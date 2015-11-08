@@ -1,0 +1,6 @@
+require './award'
+require './classes/Normal'
+require './classes/BlueStar'
+require './classes/BlueFirst'
+require './classes/BlueDistinctionPlus'
+require './classes/BlueCompare'
