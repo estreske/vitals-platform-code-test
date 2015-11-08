@@ -7,6 +7,9 @@ def update_quality(awards)
         if award.name != 'Blue Distinction Plus'
           award.quality -= 1
         end
+        if award.name == 'Blue Star'
+          award.quality -= 1
+        end
       end
     else
       if award.quality < 50
@@ -33,6 +36,9 @@ def update_quality(awards)
         if award.name != 'Blue Compare'
           if award.quality > 0
             if award.name != 'Blue Distinction Plus'
+              award.quality -= 1
+            end
+            if award.name == 'Blue Star'
               award.quality -= 1
             end
           end
